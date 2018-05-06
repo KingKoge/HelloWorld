@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtX"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:hint="Value X"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtY"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:hint="Value Y"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#e0e0e0"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="#000000"
+        android:textSize="100sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="RESET" />
+
+        <Button
+            android:id="@+id/btnCalculator"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="CALCULATOR" />
+    </LinearLayout>
+</LinearLayout>

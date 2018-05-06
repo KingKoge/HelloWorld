@@ -25,11 +25,12 @@ public class PageActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if (v == btnHelloWorld){
+        if (v == btnHelloWorld) {
             Intent intent = new Intent(PageActivity.this, HelloWorldActivity.class);
             startActivity(intent);
-        }else if (v == btnMain){
-            
+        } else if (v == btnMain) {
+            Intent intent = new Intent(PageActivity.this, MainActivity.class);
+            startActivity(intent);
         }
     }
 }
